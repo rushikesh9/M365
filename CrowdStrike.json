@@ -1,0 +1,46 @@
+{
+  "Rules": [
+    {
+      "SettingName": "CrowdStrike Falcon Sensor",
+      "Operator": "IsEquals",
+      "DataType": "String",
+      "Operand": "CrowdStrike Falcon Sensor",
+      "MoreInfoUrl": "https://www.google.com",
+      "RemediationStrings": [
+        {
+          "Language": "en_US",
+          "Title": "Incorrect Antivirus solution detected. Value discovered was {ActualValue}.",
+          "Description": "Install correct Antivirus solution."
+        }
+      ]
+    },
+    {
+      "SettingName": "CrowdStrike Falcon Sensor real time protection enabled",
+      "Operator": "IsEquals",
+      "DataType": "String",
+      "Operand": "On",
+      "MoreInfoUrl": "https://www.google.com",
+      "RemediationStrings": [
+        {
+          "Language": "en_US",
+          "Title": "Real time protection is not enabled",
+          "Description": "Real time protection must be enabled."
+        }
+      ]
+    },
+    {
+      "SettingName": "CrowdStrike Falcon Sensor definitions up-to-date",
+      "Operator": "IsEquals",
+      "DataType": "String",
+      "Operand": "Up to Date",
+      "MoreInfoUrl": "https://www.google.com",
+      "RemediationStrings": [
+        {
+          "Language": "en_US",
+          "Title": "Antivirus definitions are not up to date.",
+          "Description": "Please update the Antivirus definitions"
+        }
+      ]
+    }
+  ]
+}
